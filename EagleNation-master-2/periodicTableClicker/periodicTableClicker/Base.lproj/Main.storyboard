@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="periodicTableClicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Hydrogen-1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kc3-hM-f90">
+                                <rect key="frame" x="135" y="120" width="105" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hu0-cd-iPu">
+                                <rect key="frame" x="0.0" y="30" width="375" height="30"/>
+                                <state key="normal" title="Advance to next elment (Cost: 1000)"/>
+                                <connections>
+                                    <action selector="advance:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LYf-Fd-VQ5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVJ-BV-zpc">
+                                <rect key="frame" x="107.5" y="253.5" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="0mc-GI-gXN"/>
+                                    <constraint firstAttribute="height" constant="160" id="TRj-75-dda"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="clickElement:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gyb-dJ-4FQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Idle Gain (Level 0) Cost: 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLQ-4Z-TDn">
+                                <rect key="frame" x="20" y="585.5" width="260" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="CMG-Ie-RXh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYv-ae-LJa">
+                                <rect key="frame" x="305" y="500" width="60" height="30"/>
+                                <state key="normal" title="Upgrade"/>
+                                <connections>
+                                    <action selector="upgradeClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zzW-e6-hPe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5G-N8-pGw">
+                                <rect key="frame" x="305" y="581" width="60" height="30"/>
+                                <state key="normal" title="Upgrade"/>
+                                <connections>
+                                    <action selector="upgradeIdle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dwK-ZX-ZRI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLp-fB-bCY">
+                                <rect key="frame" x="167.5" y="453.5" width="40" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click Power (Level 1) Cost: 30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFx-CL-PPK">
+                                <rect key="frame" x="20" y="504.5" width="260" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="EVP-yx-sy0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hydrogen-1" translatesAutoresizingMaskIntoConstraints="NO" id="5c5-Vd-4FW">
+                                <rect key="frame" x="107.5" y="253.5" width="160" height="160"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uYv-ae-LJa" firstAttribute="centerY" secondItem="VFx-CL-PPK" secondAttribute="centerY" id="Aq9-O8-4Nb"/>
+                            <constraint firstItem="kc3-hM-f90" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="100" id="Bfa-n5-owe"/>
+                            <constraint firstItem="VFx-CL-PPK" firstAttribute="top" secondItem="OLp-fB-bCY" secondAttribute="bottom" constant="30" id="CsS-bB-iFY"/>
+                            <constraint firstItem="VFx-CL-PPK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Gxn-D7-u11"/>
+                            <constraint firstItem="d5G-N8-pGw" firstAttribute="centerY" secondItem="LLQ-4Z-TDn" secondAttribute="centerY" id="HCa-ck-spk"/>
+                            <constraint firstItem="hu0-cd-iPu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IEX-5U-gWZ"/>
+                            <constraint firstItem="5c5-Vd-4FW" firstAttribute="height" secondItem="uVJ-BV-zpc" secondAttribute="height" id="J9F-n1-5EM"/>
+                            <constraint firstItem="5c5-Vd-4FW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JQ8-dk-eSy"/>
+                            <constraint firstItem="kc3-hM-f90" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lj4-ta-eE1"/>
+                            <constraint firstItem="5c5-Vd-4FW" firstAttribute="width" secondItem="uVJ-BV-zpc" secondAttribute="width" id="M3Y-Da-8gk"/>
+                            <constraint firstItem="OLp-fB-bCY" firstAttribute="top" secondItem="uVJ-BV-zpc" secondAttribute="bottom" constant="40" id="NDT-F0-m6b"/>
+                            <constraint firstItem="5c5-Vd-4FW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QzK-i6-C5j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uYv-ae-LJa" secondAttribute="trailing" constant="10" id="RFw-Gt-lcp"/>
+                            <constraint firstItem="OLp-fB-bCY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y06-S6-gpS"/>
+                            <constraint firstItem="LLQ-4Z-TDn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YVq-ZE-gYA"/>
+                            <constraint firstItem="d5G-N8-pGw" firstAttribute="centerX" secondItem="uYv-ae-LJa" secondAttribute="centerX" id="f3j-7Y-pgv"/>
+                            <constraint firstItem="uVJ-BV-zpc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="g3J-71-mlm"/>
+                            <constraint firstItem="LLQ-4Z-TDn" firstAttribute="top" secondItem="VFx-CL-PPK" secondAttribute="bottom" constant="60" id="gyx-wr-HFV"/>
+                            <constraint firstItem="uVJ-BV-zpc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hga-e2-qBb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hu0-cd-iPu" secondAttribute="trailing" id="iJi-k5-Zjs"/>
+                            <constraint firstItem="hu0-cd-iPu" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="pDd-Am-k9b"/>
+                            <constraint firstItem="hu0-cd-iPu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="vaa-a7-mc7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="advanceElement" destination="hu0-cd-iPu" id="TDD-eu-dfC"/>
+                        <outlet property="elementImage" destination="5c5-Vd-4FW" id="yrP-79-Wxe"/>
+                        <outlet property="idleUpgradeLabel" destination="LLQ-4Z-TDn" id="whA-sj-sMU"/>
+                        <outlet property="manualUpgradeLabel" destination="VFx-CL-PPK" id="mmD-kG-DhX"/>
+                        <outlet property="numAtomsLabel" destination="kc3-hM-f90" id="JuS-jh-TCM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="27.436281859070466"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hydrogen-1" width="160" height="160"/>
+    </resources>
+</document>
